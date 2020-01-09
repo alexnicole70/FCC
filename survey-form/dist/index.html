@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower|Noto+Sans+KR|Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<h1 id="title">Your Favourite Ways to Waste Time</h1>
+<p id="description">Here's a short survey to dicover how you like to spend your free time so that other lazy people like you can more creativity in their laziness :D</p>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Name:</label>
+    <input type="text" name="name" id="name" size="15" placeholder="full name" required />
+  <br/>
+  <p>Gender</p>
+  <input type="radio" name="gender" id="female" value="f" />
+  <label for="female">female</label>
+  <input type="radio" name="gender" id="male" value="m" />
+  <label for="male">male</label>
+<br/>
+  <label id="email-label" for="email">Enter email for updates:</label>
+  <input type="email" name="email" id="email" placeholder="enter email" required/>
+  <input type="submit" name="submit" value="subscribe" /> </br>
+  <label for="number" id="number-label">How many hobbies do you have?</label>
+  <input type="number" id="number" size="10" min="1" max="9" placeholder="1 to 9" />
+  <p>What are your hobbies?</p>
+  <select name="hobies" id="dropdown">
+  <option value="flying">flying</option>
+  <option value="back flipping">back flipping</option>
+  <option value="people watching">people watching</option>
+  <option value="doing black magic">doing black magic</option>
+  <option value="spinning on your head">spinning on your head</option>
+</select>
+  <p>State all your special skils:</p>
+  <div>
+    <input type="checkbox" id="cooking" name="cooking" value="cooking" checked>
+    <label for="cooking">Cooking</label>
+    </br>
+    <input type="checkbox" id="baking" name="baking" value="baking">
+    <label for="baking">Baking</label>
+    </br>
+    <input type="checkbox" id="singing" name="singing" value="singing">
+    <label for="singing">Singing</label>
+    </br>
+    <input type="checkbox" id="dancing" name="dancing" value="dancing">
+    <label for="dancing">Dancing</label>
+  </div>
+  <p>Any addtional hobbies you wanna share?</p>
+  <textarea name="comments" cols="20" rows="4">Enter your comments here</textarea>
+  </br>
+  </br>
+  <input type="submit" value="Submit responses" id="submit" class="submit"/>
+
+</form>
+
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
